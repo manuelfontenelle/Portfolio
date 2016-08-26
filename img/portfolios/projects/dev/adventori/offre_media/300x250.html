@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <title>Adventori 300x250</title>
+  <link rel="stylesheet" type="text/css" href="https://adventori.com/lp/enabler//ADventori-2.0.0.css">
+  <script src="https://adventori.com/lp/enabler/ADventori-2.0.0.js"></script>
+  <link href='https://fonts.googleapis.com/css?family=Hind' rel='stylesheet' type='text/css'>
+  <style type="text/css">
+
+
+    #adventoriAd {
+    font-family: 'Hind', arial, Verdana, Georgia, sans-serif;
+    width: 300px;
+    height: 250px;
+    background-color: #fff;
+    overflow:hidden;
+    position:absolute;
+}
+    #background {
+    background:url(img/bulle.png);
+    width: 300px;
+    height: 250px;
+    position:absolute;
+    z-index:170;
+}
+    #div1{
+    position:absolute;
+    z-index:180;
+    background:url(img/logo2.jpg);
+    width: 300px;
+    height: 250px;
+}
+    #div2 p#un {
+    color: #2f2f2f;
+    font-family: 'Hind', sans-serif;  
+    font-size: 22px;
+    line-height: 30px;
+    margin-bottom: 12px;
+    position: absolute;
+    text-align: center;
+    text-transform: uppercase;
+    top: 7px;
+}
+    #un{
+    left: -300px;
+    z-index: 160;
+}
+    #un.decalage{
+    left: 74px;
+    z-index: 160;
+    -webkit-backface-visibility: hidden; /* chrome fix to avoid flicker */
+    -webkit-transition: all 0.1s ease-in 0s;
+    -moz-transition: all 0.1s ease-in 0s;
+    -o-transition: all 0.1s ease-in 0s;
+    transition: all 0.1s ease-in 0s;   
+}
+    #color{
+    font-family: 'Hind', sans-serif;  
+    color:#2c80ac;
+    z-index: 160;
+}
+    #div3 p#deux {
+    color: #2f2f2f;
+    font-family: 'Hind', sans-serif;  
+    font-size: 22px;
+    line-height: 25px;
+    margin-bottom: 12px;
+    position: absolute;
+    text-align: center;
+    text-transform: uppercase;
+    top: 0px;
+    z-index: 160;
+    width: 250px;
+}
+    #deux{
+    left: -300px;
+    z-index: 160;
+}
+    #deux.decalage2{
+    left: 26px;
+    z-index: 160;
+    -webkit-backface-visibility: hidden; /* chrome fix to avoid flicker */
+    -webkit-transition: all 0.1s ease-in 0s;
+    -moz-transition: all 0.1s ease-in 0s;
+    -o-transition: all 0.1s ease-in 0s;
+    transition: all 0.1s ease-in 0s;   
+}
+    #div3 p#deux #color2{
+    color: #2c80ac;
+    font-family: "Hind",sans-serif;
+    font-size: 17px;
+    line-height: 22px;
+    letter-spacing: 2px;
+    position: absolute;
+    right: -20px;
+    text-transform: none;
+    top: 60px;
+    width: 290px;
+    z-index: 160;
+}
+    #color2{
+    opacity:0;
+}
+    #color2.zoom{
+    opacity:1;
+    -webkit-backface-visibility: hidden; /* chrome fix to avoid flicker */
+    -webkit-transition: all 0.1s ease-in 0.2s;
+    -moz-transition: all 0.1s ease-in 0.2s;
+    -o-transition: all 0.1s ease-in 0.2s;
+    transition: all 0.1s ease-in 0.2s;  
+}
+    #div4 p#trois {
+    color: #2f2f2f;
+    font-family: "Hind",sans-serif;
+    font-size: 22px;
+    line-height: 30px;
+    margin-bottom: 12px;
+    position: absolute;
+    text-align: center;
+    text-transform: uppercase;
+    top: 7px;
+    z-index: 160;
+}
+    #trois{
+    left: -300px;
+    z-index: 160;
+}
+    #trois.decalage3{
+    left: 7px;
+    z-index: 160;
+    -webkit-backface-visibility: hidden; /* chrome fix to avoid flicker */
+    -webkit-transition: all 0.1s ease-in 0s;
+    -moz-transition: all 0.1s ease-in 0s;
+    -o-transition: all 0.1s ease-in 0s;
+    transition: all 0.1s ease-in 0s;   
+}
+    #div5 p#quatre {
+    color: #2f2f2f;
+    font-family: 'Hind', sans-serif;  
+    font-size: 22px;
+    line-height: 30px;
+    margin-bottom: 12px;
+    position: absolute;
+    text-align: center;
+    text-transform: uppercase;
+    top: -3px;
+    z-index: 160;
+}
+    #div5 p#quatre #color4{
+    color: #2c80ac;
+    font-family: "Hind",sans-serif;
+    font-size: 17px;
+    line-height: 22px;
+    left: -39px;
+    letter-spacing: 2px;
+    position: absolute;
+    text-transform: none;
+    top: 40px;
+    width: 304px;
+    z-index: 160;
+}
+    #quatre{
+    left: -300px;
+    z-index: 160;
+}
+    #quatre.decalage4{
+    left: 38px;
+    z-index: 160;
+    -webkit-backface-visibility: hidden; /* chrome fix to avoid flicker */
+    -webkit-transition: all 0.1s ease-in 0s;
+    -moz-transition: all 0.1s ease-in 0s;
+    -o-transition: all 0.1s ease-in 0s;
+    transition: all 0.1s ease-in 0s;   
+}
+    #color4{
+    opacity:0;
+}
+    #color4.zoom2{
+    opacity:1;
+    -webkit-backface-visibility: hidden; /* chrome fix to avoid flicker */
+    -webkit-transition: all 0.1s ease-in 0.2s;
+    -moz-transition: all 0.1s ease-in 0.2s;
+    -o-transition: all 0.1s ease-in 0.2s;
+    transition: all 0.1s ease-in 0.2s;  
+}
+
+
+
+  </style>
+</head>
+
+
+<body>
+<!--  Begin Crea Contener  -->
+<a href="javascript:void(0);" onclick="ADventori.click();">
+
+<div id="adventoriAd">
+
+ <div id="background">
+
+  </div>
+
+
+  <div id="div1">
+
+  </div>
+
+  <div id="div2" style="display:none;">
+        <p id="un">personnalisez <br/>vos créas <br/>en <span id="color">temps-réel</span></p>
+
+  </div>
+
+  <div id="div3" style="display:none;">
+         <p id="deux">Pour toutes vos <span id="color">stratégies</span><br/>
+     <span id="color2" style="text-transform:normal;">Mobile   ~   Vidéo   ~   Acquisition<br/>Retargeting   ~   Web-To-Store</span></p>
+
+
+  </div>
+
+    <div id="div4" style="display:none;">
+           <p id="trois">Scénarisez vos campagnes <br/>avec vos <span id="color">données</span></p>
+
+
+  </div>
+
+      <div id="div5" style="display:none;">
+     <p id="quatre">Toutes vos <span id="color">données !</span><br/>
+     <span id="color4" style="text-transform:normal;">CRM/DMP ~ Météo<br/>Géoloc ~ Point de vente<br/>Prix ~ Stock</span></p>
+
+    
+      </div>
+
+</a>
+
+
+
+<script type="text/javascript">
+
+var loop = 0;
+myTimeline();
+ function myTimeline(){
+
+    setTimeout(function(){
+
+    document.getElementById("div1").style.display = "none";
+    document.getElementById("div2").style.display = "block";
+
+  }, (2500));
+
+    setTimeout(function(){
+
+    var decalage = document.getElementById('un');
+    decalage.className='un decalage';
+
+            
+  }, (2550));
+
+
+    setTimeout(function(){
+
+    document.getElementById("div2").style.display = "none";
+    document.getElementById("div3").style.display = "block";
+
+  }, (5000));
+
+        setTimeout(function(){
+
+    var decalage2 = document.getElementById('deux');
+    decalage2.className='deux decalage2';
+
+    var zoom = document.getElementById('color2');
+    zoom.className='color2 zoom';
+
+            
+  }, (5050));
+
+    setTimeout(function(){
+
+    document.getElementById("div3").style.display = "none";
+    document.getElementById("div4").style.display = "block";
+
+  }, (7500));
+
+            setTimeout(function(){
+
+    var decalage3 = document.getElementById('trois');
+    decalage3.className='trois decalage3';
+            
+  }, (7550));
+
+    setTimeout(function(){
+
+    document.getElementById("div4").style.display = "none";
+    document.getElementById("div5").style.display = "block";
+
+  }, (10000));
+            
+            setTimeout(function(){
+
+    var decalage4 = document.getElementById('quatre');
+    decalage4.className='quatre decalage4';
+
+    var zoom2 = document.getElementById('color4');
+    zoom2.className='color4 zoom2';
+            
+  }, (10050));
+
+  
+  setTimeout(function(){loop++;endOfAnimation();}, (14000));
+ }
+
+ function endOfAnimation(){
+  
+            if(loop>0) {
+              document.getElementById("div1").style.display = "block";
+              document.getElementById("div2").style.display = "none";
+              document.getElementById("div3").style.display = "none";
+              document.getElementById("div4").style.display = "none";
+              document.getElementById("div5").style.display = "none";
+
+              var decalage = document.getElementById('un');
+              decalage.className='un';
+              var decalage2 = document.getElementById('deux');
+              decalage2.className='deux';
+              var decalage3 = document.getElementById('trois');
+              decalage3.className='trois';
+              var decalage4 = document.getElementById('quatre');
+              decalage4.className='quatre';
+              var zoom = document.getElementById('color2');
+              zoom.className='color2';
+              var zoom2 = document.getElementById('color4');
+              zoom2.className='color4';
+
+                setTimeout(function(){myTimeline();}, (1000));
+
+      }
+};
+
+</script>
+
+</body>
+</html>

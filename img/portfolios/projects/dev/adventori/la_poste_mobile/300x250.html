@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<title>CARROUSEL LA POSTE MOBILE 300x250</title>
+    <link rel="stylesheet" type="text/css" href="http://adventori.com/lp/enabler//ADventori-2.0.0.css">
+    <script src="http://adventori.com/lp/enabler/ADventori-2.0.0.js"></script>
+<style type="text/css">
+
+
+
+
+#adventoriAd {
+    border: solid 2px #0d4084;
+    width: 300px;
+    height: 250px;
+    background-color:#f2f2f2;
+    display:block;
+}
+
+#adventoriSlides .slide .item > div {
+    font-family: Helvetica,Arial,sans-serif;
+}
+
+#adventoriSlides .slide .item .img_container {
+    width: 160px;
+    height: 160px;
+    top:80px;
+    left: 0px;
+    border-right: solid #353535 0px;
+    text-align: center;
+}
+
+#adventoriSlides .slide .item .img_container .img_helper {
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+
+#adventoriSlides .slide .item .img_container img {
+    vertical-align: middle;
+    display:inline;
+}
+
+#adventoriSlides .slide .item .name {
+    font-family: 'avenir_lt_55_romanbold',arial, sans-serif;
+    left: 12px;
+    top: 56px;
+    width: 260px;
+    height:22px;
+    font-size: 16px;
+    line-height:18px;
+    color:#000;
+    white-space:nowrap;
+    overflow:hidden;
+    position:absolute;
+}
+
+#adventoriSlides .slide .item .description {
+    font-family: 'avenir_lt_45_bookregular',arial, sans-serif;
+    left: 150px;
+    top: 129px;
+    width: 130px;
+    font-size: 12px;
+    height :50px;
+    line-height: 16px;
+    white-space:nowrap;
+    overflow:hidden;
+    color:#000;
+}
+
+/*Prix Barré*/
+#adventoriSlides .slide .item .original_price {
+    font-family: arial, sans-serif;
+    margin-left: -500px;
+    top: 90px;
+    width: 70px;
+    position: absolute;
+    overflow:hidden;
+    color: #222;
+    right: 20px;
+    text-decoration: line-through;
+}
+
+#adventoriSlides .active .slide .item .original_price {
+    left:225px;
+    margin-left:0px;
+    transition: margin 0.5s ease-in 0.8s;
+}
+
+#adventoriSlides .slide .item .original_price .a {
+    font-family: arial, sans-serif;
+    font-size: 13px;
+    line-height: 24px;
+}
+
+#adventoriSlides .slide .item .original_price .b, #adventoriSlides .slide .original_price .c {
+    font-family: arial, sans-serif;
+    position:relative;
+    left:0px;
+    font-size: 13px;
+}
+
+#adventoriSlides .slide .item .original_price .e {
+    font-family:  arial, sans-serif;
+    margin-left: 0;
+    top:5px;
+    font-size:13px;
+}
+
+/*Prix*/
+#adventoriSlides .slide .item .price {
+    font-family: arial, sans-serif;
+    position: absolute;
+    font-weight:bold;
+    color: #cc0000;
+    margin-left: -500px;
+    top: 94px;
+    width: 110px;
+    font-size: 20px;
+    line-height: 20px;
+    right: 20px;
+}
+
+#adventoriSlides .active .slide .item .price {
+    left: 150px;
+    margin-left: 0;
+    transition: margin 0.3s ease-in 0.8s;
+}
+
+#adventoriSlides .slide .item .price .a {
+    font-family: arial, sans-serif;
+    font-size: 22px;
+}
+
+#adventoriSlides .slide .item .price .b, #adventoriSlides .slide .price .c {
+    font-family: arial, sans-serif;
+    font-size: 19px;
+    position: relative;
+}
+
+#adventoriSlides .slide .item .price .e {
+    font-family: arial, sans-serif;
+    font-size: 19px;
+}
+
+/*Button*/
+#adventoriSlides .slide .item .cta {
+    font-family:  arial, sans-serif;
+    font-weight: bold;
+    width:100px;
+    border-radius:2px;
+    padding-left:10px;
+    left: 150px;
+    top: 180px;
+    line-height: 26px;
+    color: #000;
+    background-color: #ffe700;
+    font-size: 12px;
+}
+
+#adventoriSlides .slide .item #triangle {
+    color:#f78d21;
+}
+
+#adventoriSlides .slide .item .cta:hover {
+    text-decoration:underline;
+}
+
+#adventoriNav label {
+    padding-top: 100px;
+    color: #0d4084;
+    text-shadow: 0 0 0px rgb(119, 0, 0);
+}
+
+/*Pagination*/
+#adventoriNav label { padding-top: 100px; color: #0d4084; }
+#adventoriBullets {
+    bottom: 9px;
+    right: 0px;
+    left: auto;
+    width:229px;
+}
+
+#fixed img{
+    border-bottom: solid 2px #0d4084;
+    width:300px;
+    height:44px;
+}
+
+
+#fixed #geoloc{
+ position:absolute;
+ top:7px;
+ color:#fff;
+ font-size:11.5px;
+ line-height:15px;
+ left:75px;
+}
+
+#adventoriBullets > label { color:#ddd; }
+#adventoriBullets > label:hover { color:#ccc; }
+#adventoriBullets > label.active { color:#0d4084; }
+
+#adventoriBullets > label {
+    text-shadow: 0px 0px 0px #700;
+}
+
+</style>
+</head>
+
+<body>
+<!--  Begin Crea Contener  -->
+
+    <div id="adventoriAd" onmouseover="carousel.pause()" onmouseout="carousel.play()">
+     
+        <div id="adventoriSlides"></div>
+        <div id="adventoriNav"><label onclick="carousel.prev()" class="prev">‹</label><label onclick="carousel.next()" class="next">›</label></div>
+        <div id="adventoriBullets"></div>
+        <div id="fixed"><img src="img/300x44_lapostemobile_header.png"><div id="geoloc">Rendez-vous : <br/><b>Paris 18eme, 57 Avenue de Saint-Ouen</b></div></div>
+      
+    </div>
+
+<script type="text/javascript">
+
+    function shuffle(o) { for(var j, x, i = o.length; i; j = Math.floor(Math.random() * i), x = o[--i], o[i] = o[j], o[j] = x);return o; }
+    var data = ADventori.initData({
+        items: shuffle([
+            {"data":{"name":"Samsung Galaxy Trend 2 Lite Blanc","img":"img/200x200_samsung_galaxy_trend2.png","description":"Soit <b>9,90€</b><br/><b>-9,90€</b> remboursés", "price":"0,00", "original_price":""}},
+
+            {"data":{"name":"Apple Iphone 6 64Go Argent","img":"img/200x200_iphone6_64go.png","description":"Soit <b>559,90€</b><br/><b>-50,00€</b> remboursés", "price":"509,90",  "original_price":""}},
+
+            {"data":{"name":"LG G3 Titan","img":"img/200x200_lg_g3_titan.png","description":"Soit <b>189,90€</b><br/><b>-50,00€</b> remboursés", "price":"139,90",  "original_price":""}},
+
+            {"data":{"name":"Samsung Galaxy S6 Blanc","img":"img/200x200_samsung_galaxys6.png","description":"Soit <b>449,90€</b><br/><b>-50,00€</b> remboursés", "price":"399,90"}}
+
+           
+
+        ])
+    });
+    
+
+
+
+    ADventori.Carousel.prototype.initSlide = function(data) {
+        console.log("INITSLIDE");
+        var partsPrice = data.price ? data.price.split(',') : [];
+        var partsOriginal_Price = data.original_price ? data.original_price.split(',') : [];
+
+        var result = '<div class="img_container"><span class="img_helper"></span><img class="photos" src="' + data.img + '"></div>';
+            if(data.name)result += '<div class="name">' + data.name + '</div>';
+            if(data.description)result += '<div class="description">' + data.description + '</div>';
+            if(data.geoloc)result += '<div class="geoloc">' + data.geoloc + '</div>';
+            if(data.original_price)result += (partsOriginal_Price.length > 0 ? '<div class="original_price"><div class="barre"></div><span class="a">' + partsOriginal_Price[0] + '</span>' + (partsOriginal_Price.length > 1 ? '<span class="b">,</span>' : '') + (partsOriginal_Price.length > 1 ? '<span class="c">' + partsOriginal_Price[1] + '</span>' : '') + '<span class="e">€</span>' + '</div>' : '')
+            result += '<div class="price"><span class="a">' + partsPrice[0] + '</span>' + (partsPrice.length > 1 ? '<span class="b">,</span>' : '') + (partsPrice.length > 1 ? '<span class="c">' + partsPrice[1] + '</span>' : '') + '<span class="e">€</span>' + '</div>'
+            result += '<div class="cta">' + this.conf.cta + '</div>';
+        return (result);
+    };
+
+   var carousel = new ADventori.Carousel({
+        items: data.items,
+        elSlides: document.getElementById('adventoriSlides'),
+        elBullets: document.getElementById('adventoriBullets'),
+        cta: '<span id="go"><span id="triangle"> ► </span>Sélectionner</span>',
+        autoStart: true
+     
+    });
+
+   ADventori.Format.adaptText(document.getElementsByClassName('description'), 11);
+   ADventori.Format.adaptText(document.getElementsByClassName('name'), 12);
+   ADventori.Format.adaptImage(document.getElementsByClassName('photos'));
+
+</script>
+</body>
+</html>

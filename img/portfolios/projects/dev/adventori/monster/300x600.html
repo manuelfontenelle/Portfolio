@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Carousel Monster 300x600</title>
+  <link rel="stylesheet" type="text/css" href="http://adventori.com/lp/enabler//ADventori-2.0.0.css">
+  <script src="http://adventori.com/lp/enabler/ADventori-2.0.0.js"></script>
+  <style type="text/css">
+
+
+    #adventoriAd {
+    font-family:arial,verdana, sans-serif;
+    border: solid 4px #642891;
+    width: 300px;
+    height: 600px;
+    background-color: #f2f2f2;
+    display:block;
+    }
+
+    div#rideau .texte_rideau{
+    width:300px;
+    margin:0 auto;
+    text-align:center;
+    font-size:28px;
+    line-height:40px;
+    position:absolute;
+    top:235px;
+    color:#fff;
+    }
+
+    div#rideau{
+    position: relative;
+    left:0;
+    top: -5px;
+    height : 600px;
+    background-color: #642891;
+    z-index: 99;
+    box-shadow: 8px 8px 5px #aaa;
+    }
+
+    div#rideau.rideau_active{
+    left: -600px;
+    z-index: 99;
+    -webkit-backface-visibility: hidden; /* chrome fix to avoid flicker */
+    -webkit-transition: all 1s ease-in-out 0s;
+    -moz-transition: all 1s ease-in-out 0s;
+    -o-transition: all 1s ease-in-out 0s;
+    transition: all 1s ease-in-out 0s;
+    }
+
+    #adventoriSlides .slide-container .slide {
+    margin-top:44px;
+    height:525px;
+    width:270px;
+    padding-left: 10px;
+    padding-right: 10px;
+    }
+
+    #adventoriSlides .slide .item {
+    border-bottom:1px solid #8ca749;
+    height: 33.3%;
+    }
+
+    #adventoriSlides .slide .item .img_container .img_helper {
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+    }
+
+    #adventoriSlides .slide .item .img_container img {
+    display:none;
+    vertical-align: middle;
+
+    }
+
+    #adventoriSlides .slide .item .poste {
+    top: 10px;
+    width: 270px;
+    height:20px;
+    font-size: 15px;
+    line-height:18px;
+    color:#642891;
+    white-space:nowrap;
+    overflow:hidden;
+    position:absolute;
+    }
+
+    #adventoriSlides .slide .item .entreprise {
+    font-weight:bold;
+    top: 30px;
+    width: 270px;
+    font-size: 14px;
+    height :20px;
+    line-height: 20px;
+    white-space:nowrap;
+    overflow: hidden;
+    color:#353535;
+    }
+
+    /*Button*/
+    #adventoriSlides .slide .item .cta {
+    width:70px;
+    padding-left:15px;
+    right: 0px;
+    top: 135px;
+    line-height: 24px;
+    color: #FFF;
+    background-color: #8ca749;
+    font-size: 12px;
+    border: 1px solid rgba(0,0,0,0.1);
+    box-shadow:
+    inset 0 2px 3px rgba(255,255,255,0.3),
+    inset 0 -2px 3px rgba(0,0,0,0.3),
+    0 1px 1px rgba(255,255,255,0.9);
+    }
+
+
+    #adventoriSlides .slide .item .description {
+    font-size: 12px;
+    padding-right:10px;
+    top: 59px;
+    width: 270px;
+    height:70px;
+    line-height: 15px;
+    word-wrap: break-word;
+    overflow:hidden;
+    color: #7f7f7f;
+    }
+
+    #adventoriSlides .slide .item .ville {
+    padding-top:7px;
+    vertical-align:middle;
+    font-size: 17px;
+    text-align:center;
+    top: 134px;
+    width: 170px;
+    height:23px;
+    line-height: 15px;
+    word-wrap: break-word;
+    overflow:hidden;
+    color: #642891;
+    }
+
+    #adventoriNav label {
+    padding-top: 270px;
+    color: #8ca749;
+    text-shadow: 0 0 0px rgb(119, 0, 0);
+    }
+
+    /*Pagination*/
+    #adventoriNav label { color: #642891; z-index: 8;}
+
+    #adventoriBullets {
+    background-color:#642891;
+    bottom: 0px;
+    right: 0px;
+    left: auto;
+    width:300px;
+    }
+
+    #fixed img{
+    position:absolute;
+    width:300px;
+    height:44px;
+    z-index:150;
+    }
+
+    #adventoriBullets > label { color:#ddd; }
+    #adventoriBullets > label:hover { color:#ccc; }
+    #adventoriBullets > label.active { color:#8ca749; }
+
+    #adventoriBullets > label {
+    text-shadow: 0px 0px 0px #700;
+    }
+  </style>
+
+</head>
+<body>
+<!--  Begin Crea Contener  -->
+
+<div id="adventoriAd">
+  <div id="adventoriSlides"></div>
+  <div id="adventoriNav"><label onclick="carousel.prev()" class="prev">‹</label><label onclick="carousel.next()" class="next">›</label></div>
+  <div id="adventoriBullets"></div>
+  <div id="fixed"><img src="img/300x44_monster_header.jpg"></div>
+  <a href="#" onclick="ADventori.click(event, data.global);">
+    <div id="rideau"><p class="texte_rideau">Les offres d'emploi<br />RETAIL<br />près de chez vous</p></div>
+  </a>
+
+
+</div>
+<script type="text/javascript">
+
+    function shuffle(o) { for(var j, x, i = o.length; i; j = Math.floor(Math.random() * i), x = o[--i], o[i] = o[j], o[j] = x);return o; }
+    var data = ADventori.initData({
+        global: {"data":{
+          "type":"backup",
+          "accroche" : "Les offres d'emploi<br/>RETAILLL<br/>près de chez vous",
+          'url':'http://offres.monster.fr/rechercher/commercial_5'}
+        },
+        items: shuffle([
+            {"data":{"poste":"Ingénieur Réseaux et sécurité (H/F)","entreprise":"NEURONES IT","ville":"PARIS", "description":"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"}},
+
+            {"data":{"poste":"Directeur de projet swift (H/F)","entreprise":"01 CONSEILS ET SERVICES","ville":"LYON", "description":"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"}},
+
+            {"data":{"poste":"Ingénieur qualité développement (H/F)","entreprise":"AGENCE E","ville":"MARSEILLE","description":"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"}},
+
+            {"data":{"poste":"Chef de projet CRM Salesforce /Veeva H/F","entreprise":"COGNIZANT","ville":"BOULOGNE BILLANCOURT","description":"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"}},
+
+            {"data":{"poste":"Responsable d'application SIRH (H/F)","entreprise":"ROBERT WALTERS HOLDING SAS","ville":"SAINT MALO","description":"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"}},
+
+            {"data":{"poste":"TESTEUR IT H/F","entreprise":"SYNERGIE","ville":"BOIS COLOMBES","description":"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"}}
+
+
+
+        ])
+});
+
+
+
+
+ADventori.Display.setText(document.getElementsByClassName('texte_rideau'),data.global.data.accroche);
+
+
+    ADventori.Carousel.prototype.initSlide = function(data) {
+        var partsPrice = data.price ? data.price.split(',') : [];
+        var partsOriginal_Price = data.original_price ? data.original_price.split(',') : [];
+        var result = '<div class="img_container"><span class="img_helper"></span></div>';
+            if(data.poste)result += '<div class="poste">' + data.poste + '</div>';
+            if(data.entreprise)result += '<div class="entreprise">' + data.entreprise + '</div>';
+            if(data.description)result += '<div class="description">' + data.description + '</div>';
+        if(data.ville)result += '<div class="ville">' + data.ville + '</div>';
+      result += '<div class="cta">' + this.conf.cta + '</div>';
+        return (result);
+    };
+
+
+   var carousel = new ADventori.Carousel({
+        items: data.items,
+        hSplit:1,
+        vSplit:3,
+        elSlides: document.getElementById('adventoriSlides'),
+        elBullets: document.getElementById('adventoriBullets'),
+        cta: '<span id="go">Je postule</span>',
+        autoStart: false
+     
+    });
+
+   ADventori.Format.adaptText(document.getElementsByClassName('description'), 10);
+   ADventori.Format.adaptText(document.getElementsByClassName('poste'), 8);
+   ADventori.Format.adaptText(document.getElementsByClassName('ville'), 8);
+
+
+    setTimeout(function(){
+    document.getElementById('rideau').classList.add('rideau_active');
+    setTimeout(function(){carousel.start();}, (500));
+      }, (2500));
+
+
+
+
+
+</script>
+</body>
+</html>

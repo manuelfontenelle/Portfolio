@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<title>Carousel Lazada 300x600</title>
+<script src="http://adventori.com/lp/enabler/ADventori-2.0.0.js"></script>
+<link rel=stylesheet type="text/css" href="http://adventori.com/lp/enabler/ADventori-2.0.0.css">
+<style type="text/css">
+#adventoriAd {
+    border: solid 4px #18883e;
+    width: 300px;
+    height: 600px;
+    background-color: #f2f2f2;
+    display:block;
+}
+#adventoriSlides .slide .item > div {
+    font-family: Helvetica,Arial,sans-serif;
+}
+#adventoriSlides .slide .item .img_container {
+    top: 100px;
+    left: 1px;
+    width: 160px;
+    height: 150px;
+    border-right: solid #4c4849 0px;
+    text-align: center;
+}
+#adventoriSlides .slide .item .img_container .img_helper {
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+#adventoriSlides .slide .item .img_container img {
+    vertical-align: middle;
+    display:inline;
+}
+#adventoriSlides .slide .item .name {
+    left: 11px;
+    top: 53px;
+    width: 260px;
+    height:40px;
+    font-size: 16px;
+    line-height:18px;
+    color:#4c4849;
+    font-weight: bold;
+    white-space:nowrap;
+    overflow:hidden;
+    position:absolute;
+}
+#adventoriSlides .slide .item .description {
+    left: 170px;
+    top: 83px;
+    width: 125px;
+    font-size: 14px;
+    height :70px;
+    line-height: 20px;
+    white-space:nowrap;
+    overflow: hidden;
+    color:#4c4849;
+}
+/*Prix Barré*/
+#adventoriSlides .slide .item .original_price {
+  margin-left: -500px;
+  top: 100px;
+  width: 90px;
+  position: absolute;
+  overflow:hidden;
+  color: #767676;
+  right: 20px;
+  text-decoration: line-through;
+}
+
+#adventoriSlides .active .slide .item .original_price {
+  left:170px;
+  margin-left:0px;
+  transition: margin 0.5s ease-in 0.8s;
+}
+
+#adventoriSlides .slide .item .original_price .a {
+  font-size: 13px;
+  line-height: 24px;
+}
+#adventoriSlides .slide .item .original_price .b, #adventoriSlides .slide .original_price .c {
+  position:relative;
+  left:0px;
+  font-size: 13px;
+}
+#adventoriSlides .slide .item .original_price .e {
+  margin-left: 0;
+  top:5px;
+  font-size:13px;
+}
+
+/*Prix*/
+#adventoriSlides .slide .item .price {
+  position: absolute;
+  color: #d4232b;
+  margin-left: -500px;
+  top: 120px;
+  width: 110px;
+  font-weight: bold;
+  font-size: 14px;
+  text-shadow: 0 0 8px #fdd;
+  line-height: 20px;
+  right: 20px;
+
+}
+
+#adventoriSlides .active .slide .item .price {
+  left:170px;
+  margin-left: 0;
+  transition: margin 0.3s ease-in 0.8s;
+}
+
+#adventoriSlides .slide .item .price .a {
+  font-size: 17px;
+}
+#adventoriSlides .slide .item .price .b, #adventoriSlides .slide .price .c {
+  font-size: 17px;
+  position: relative;
+}
+#adventoriSlides .slide .item .price .e {
+  font-size: 17px;
+
+}
+/*Button*/
+#adventoriSlides .slide .item .cta {
+  width:63px;
+  padding-left:8px;
+  right: 20px;
+  top: 175px;
+  line-height: 24px;
+  color: #FFF;
+  background-color: #f37022;
+  font-size: 12px;
+}
+
+#adventoriSlides .slide .item .cta:hover {
+  width:63px;
+  padding-left:8px;
+  right: 20px;
+  top: 175px;
+  line-height: 24px;
+  color: #f37022;
+  background-color: #e3e3e3;
+  font-size: 12px;
+  border:1px solid #f37022;
+}
+
+
+
+#adventoriSlides .slide .item .reduction {
+    left: 170px;
+    font-size: 16px;
+    padding:0 auto;
+    padding-left:8px;
+    padding-right:7px;
+    top: 154px;
+    width: 38px;
+    height:24px;
+    line-height: 24px;
+    color: #FFF;
+    background-color: #d4232b;
+}
+
+#adventoriNav label {
+  padding-top: 100px;
+  color: #18883e;
+  text-shadow: 0 0 0px rgb(119, 0, 0);
+}
+/*Pagination*/
+#adventoriNav label { margin-top: 165px; color: #18883e; }
+#adventoriBullets {
+    bottom: 275px;
+    right: 0px;
+    left: auto;
+    width:300px;
+}
+
+#fixed img{
+  width:300px;
+  height:44px;
+}
+
+#adventoriBullets > label { color:#ddd; }
+#adventoriBullets > label:hover { color:#ccc; }
+#adventoriBullets > label.active { color:#18883e; }
+
+#adventoriBullets > label {
+  text-shadow: 0px 0px 0px #700;
+}
+</style>
+
+</head>
+<body>
+<!--  Begin Crea Contener  -->
+
+    <div id="adventoriAd" onmouseover="carousel.pause()" onmouseout="carousel.play()">
+    <div id="adventoriSlides"></div>
+        <div id="adventoriNav"><label onclick="carousel.prev()" class="prev">‹</label><label onclick="carousel.next()" class="next">›</label></div>
+    <div id="adventoriBullets"></div>
+        <div id="fixed"><img src="img/300x44_lazada_header.jpg"></div>
+
+
+</div>
+<script type="text/javascript">
+
+    function shuffle(o) { for(var j, x, i = o.length; i; j = Math.floor(Math.random() * i), x = o[--i], o[i] = o[j], o[j] = x);return o; }
+    var data = ADventori.initData({
+        items: shuffle([
+            {"data":{"name":"Asus UX305FA(MS)-FC075H Zenbook (13.3inch)","img":"img/200x200-pc.jpg","description":"ZenBook UX305 weighs a mere 1.2kg<br />It is quite simply the thinnest and lightest laptop with a 13.3-inch QHD+ display<br />refined white Ceramic Alloy or Obsidian", "price":"2369,00","original_price":"2399,00"}},
+
+            {"data":{"name":"Sundeal R7 Road Bike (Black/Green)","img":"img/200x200-velo.jpg","description":"6061 aluminum lightweight and efficient frame<br />Sundeal road race geometry and tapered headtube for agile handling<br />Shimano Tourney 14-speed efficient drivetrain","reduction":"-41%", "price":"999,00","original_price":"1699,00"}},
+
+            {"data":{"name":"Digital LCD Thermometer Hygrometer","img":"img/200x200-temperature.jpg","description":"Digital LCD Indoor Clock Thermometer Hygrometer Humidity Meter<br />100% brand new and high quality<br />Wonderful assistant for you to get timely Temperature and Humidity","price":"29,60"}},
+
+            {"data":{"name":"Casio F-94W-8DG Original & Genuine Digital Watch","img":"img/200x200-montre.jpg","description":"Anadigi - Dual Time<br />Water Resist<br />Unisex","reduction":"-52%", "price":"41,70","original_price":"87,00"}},
+
+            {"data":{"name":" Sharp Microwave Oven R352ZS 25L","img":"img/200x200-micro-onde.jpg","description":"900W<br />25L capacity<br />2-step cooking sequence","reduction":"-23%", "price":"289,00","original_price":"375,88"}},
+
+            {"data":{"name":" Sharp Microwave Oven R352ZS 25L","img":"img/200x200-micro-onde.jpg","description":"900W<br />25L capacity<br />2-step cooking sequence","reduction":"-23%", "price":"289,00","original_price":"375,88"}}
+
+
+        ])
+});
+
+
+
+    ADventori.Carousel.prototype.initSlide = function(data) {
+        var partsPrice = data.price ? data.price.split(',') : [];
+        var partsOriginal_Price = data.original_price ? data.original_price.split(',') : [];
+        var result = '<div class="img_container"><span class="img_helper"></span><img class="photos" src="' + data.img + '"></div>';
+            if(data.name)result += '<div class="name">' + data.name + '</div>';
+            if(data.description)result += '<div class="description">' /*+ data.description*/ + '</div>';
+            if(data.reduction)result += '<div class="reduction">' + data.reduction + '</div>';
+      result += (partsOriginal_Price.length > 0 ? '<div class="original_price"><div class="barre"></div><span class="e">RM </span>' + '<span class="a">' + partsOriginal_Price[0] + '</span>' + (partsOriginal_Price.length > 1 ? '<span class="b">,</span>' : '') + (partsOriginal_Price.length > 1 ? '<span class="c">' + partsOriginal_Price[1] + '</span>' : '') + '</div>' : '');
+      result += '<div class="price"><span class="e">RM </span>' + '<span class="a">' + partsPrice[0] + '</span>' + (partsPrice.length > 1 ? '<span class="b">,</span>' : '') + (partsPrice.length > 1 ? '<span class="c">' + partsPrice[1] + '</span>' : '') + '</div>';
+      result += '<div class="cta">' + this.conf.cta + '</div>';
+        return (result);
+    };
+
+   var carousel = new ADventori.Carousel({
+        items: data.items,
+        hSplit:1,
+        vSplit:2,
+        elSlides: document.getElementById('adventoriSlides'),
+        elBullets: document.getElementById('adventoriBullets'),
+        cta: '<span id="go">BUY NOW</span>',
+        autoStart: true
+     
+    });
+
+   ADventori.Format.adaptText(document.getElementsByClassName('description'), 10);
+   ADventori.Format.adaptText(document.getElementsByClassName('name'), 15);
+
+    ADventori.Format.adaptImage(document.getElementsByClassName('photos'));
+
+
+
+ 
+
+
+
+</script>
+</body>
+</html>

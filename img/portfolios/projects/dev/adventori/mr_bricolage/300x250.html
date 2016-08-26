@@ -1,0 +1,825 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <title>Mr Bricolage 300X250</title>
+  <link rel="stylesheet" type="text/css" href="http://adventori.com/lp/enabler//ADventori-2.0.0.css">
+  <script src="http://adventori.com/lp/enabler/ADventori-2.0.0.js"></script>
+  <style type="text/css">
+
+
+
+@font-face {
+    font-family: 'apercuregular';
+    src: url('font/apercu-webfont.eot');
+    src: url('font/apercu-webfont.eot?#iefix') format('embedded-opentype'),
+         url('font/apercu-webfont.woff2') format('woff2'),
+         url('font/apercu-webfont.woff') format('woff'),
+         url('font/apercu-webfont.ttf') format('truetype'),
+         url('font/apercu-webfont.svg#apercuregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'apercubold';
+    src: url('font/apercu-bold-webfont.eot');
+    src: url('font/apercu-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('font/apercu-bold-webfont.woff2') format('woff2'),
+         url('font/apercu-bold-webfont.woff') format('woff'),
+         url('font/apercu-bold-webfont.ttf') format('truetype'),
+         url('font/apercu-bold-webfont.svg#apercubold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'apercuitalic';
+    src: url('font/apercu-italic-webfont.eot');
+    src: url('font/apercu-italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('font/apercu-italic-webfont.woff2') format('woff2'),
+         url('font/apercu-italic-webfont.woff') format('woff'),
+         url('font/apercu-italic-webfont.ttf') format('truetype'),
+         url('font/apercu-italic-webfont.svg#apercuitalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'apercumedium';
+    src: url('font/apercu-medium-webfont.eot');
+    src: url('font/apercu-medium-webfont.eot?#iefix') format('embedded-opentype'),
+         url('font/apercu-medium-webfont.woff2') format('woff2'),
+         url('font/apercu-medium-webfont.woff') format('woff'),
+         url('font/apercu-medium-webfont.ttf') format('truetype'),
+         url('font/apercu-medium-webfont.svg#apercumedium') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'dock11regular';
+    src: url('font/heavy_dock11-webfont.eot');
+    src: url('font/heavy_dock11-webfont.eot?#iefix') format('embedded-opentype'),
+         url('font/heavy_dock11-webfont.woff2') format('woff2'),
+         url('font/heavy_dock11-webfont.woff') format('woff'),
+         url('font/heavy_dock11-webfont.ttf') format('truetype'),
+         url('font/heavy_dock11-webfont.svg#dock11regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+    #adventoriAd {
+    font-family: arial,Verdana,Georgia,sans-serif;
+    width: 300px;
+    height: 250px;
+    position:relative;
+    border:1px solid #c20015;
+}
+
+    #adventoriAd #fixed {
+    position:absolute;
+    background-color:white;
+    bottom:0;
+    width:300px;
+    height:50px;
+    z-index:150;
+}
+
+
+/*------------------------BACKGROUND------------------------------*/
+    #background{
+    position:relative;
+    top:0px;
+    width:300px;
+    height:auto;
+    opacity:0;
+}
+
+    #background.zoom{
+    opacity:1;
+    top:15px;
+    width:300px;
+    height:250px;
+    -webkit-backface-visibility: hidden; /* chrome fix to avoid flicker */
+    -webkit-transition: all 0.3s ease-in 0.2s;
+    -moz-transition: all 0.3s ease-in 0.2s;
+    -o-transition: all 0.3s ease-in 0.2s;
+    transition: all 0.3s ease-in 0.2s;
+    }
+
+    #background2{
+    position:relative;
+    top:26px;
+    opacity:0.5;
+    width:300px;
+    height:250px;
+
+}
+
+    #background2.opacity{
+    opacity:1;
+    -webkit-backface-visibility: hidden; /* chrome fix to avoid flicker */
+    -webkit-transition: all 0.2s ease-in 0s;
+    -moz-transition: all 0.2s ease-in 0s;
+    -o-transition: all 0.2s ease-in 0s;
+    transition: all 0.2s ease-in 0s;
+
+}
+
+
+/*------------------------LOGO------------------------------*/
+
+    #logo img{
+    height: auto;
+    left: 6px;
+    position: absolute;
+    top: 10px;
+    width: 200px;
+    z-index: 150;
+}
+
+    #logo{
+    position:absolute;
+    width:300px;
+    height:auto;
+}
+
+/*------------------------HEADER------------------------------*/
+
+    #header{
+    top:-100px;
+    width:300px;
+    height:53px;
+    background-color:white;
+    z-index:150;
+    position:absolute;
+}
+
+    #header2{
+    top:0px;
+    width:300px;
+    height:53px;
+    background-color:white;
+    z-index:150;
+    position:absolute;
+}
+
+    #header.descente{
+    top:0px;
+    -webkit-backface-visibility: hidden; /* chrome fix to avoid flicker */
+    -webkit-transition: all 0.4s ease-in 0.2s;
+    -moz-transition: all 0.4s ease-in 0.2s;
+    -o-transition: all 0.4s ease-in 0.2s;
+    transition: all 0.4s ease-in 0.2s;
+}
+
+
+
+/*------------------------DATE------------------------------*/
+
+    #date {
+    /*color: #c20015;*/
+    font-family: "apercuregular",arial,sans-serif;  font-weight:bold;
+    font-size: 14px;
+    line-height: 16px;
+    padding-left: 196px;
+    position: relative;
+    top: -4px;
+}
+
+#date2{
+  /*color: #c20015;*/
+  font-family: "apercuregular",arial,sans-serif;
+  font-weight:bold;
+  font-size: 14px;
+  line-height: 16px;
+  padding-left: 196px;
+  position: relative;
+  top: -4px;
+}
+
+    #color1,#color2 {
+    /*color: #c20015;*/
+    font-family: "apercuregular",arial,sans-serif;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+    #color1_2,#color2_2 {
+    /*color: #c20015;*/
+    font-family: "apercuregular",arial,sans-serif;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+    .color{
+    font-family:'apercuregular', arial, sans-serif;
+    /*color:#c20015;*/
+}
+
+
+
+/*------------------------PRODUIT------------------------------*/
+
+    #produit{
+    position:absolute;
+    width:150px;
+    height:112px;
+    top:55px;
+    left:0px;
+    z-index:170;
+}
+
+    #produit.produit_apparition{
+    opacity:1;
+    -webkit-backface-visibility: hidden; /* chrome fix to avoid flicker */
+    -webkit-transition: all 0.3s ease-in 0.1s;
+    -moz-transition: all 0.3s ease-in 0.1s;
+    -o-transition: all 0.3s ease-in 0.1s;
+    transition: all 0.3s ease-in 0.1s;
+
+}
+
+    #produit.produit_resize{
+    top: 43px;
+    -webkit-backface-visibility: hidden; /* chrome fix to avoid flicker */
+    -webkit-transition: all 0.2s ease-in 0s;
+    -moz-transition: all 0.2s ease-in 0s;
+    -o-transition: all 0.2s ease-in 0s;
+    transition: all 0.2s ease-in 0s;
+
+    }
+
+
+    #produit.produit_resize img{
+    width: 135px;
+    -webkit-backface-visibility: hidden; /* chrome fix to avoid flicker */
+    -webkit-transition: all 0.2s ease-in 0s;
+    -moz-transition: all 0.2s ease-in 0s;
+    -o-transition: all 0.2s ease-in 0s;
+    transition: all 0.2s ease-in 0s;
+    }
+
+/*------------------------NAME------------------------------*/
+    #name p{
+    position:absolute;
+    font-family:'apercubold', arial, sans-serif;
+    font-weight:bold;
+    text-transform:uppercase;
+    text-align:right;
+    color:#333333; 
+    width:280px;
+    height:19px;
+      margin-left:-10px;
+}
+
+    #name{
+    position: absolute;
+    margin-left:350px;
+    top:19px;
+    width:270px;
+    height:40px;
+}
+
+
+    #name.name_decalage{
+    font-size:17px; 
+    line-height:17px; 
+    margin-left:21px;
+    -webkit-backface-visibility: hidden; /* chrome fix to avoid flicker */
+    -webkit-transition: all 0.3s ease-in 0.2s;
+    -moz-transition: all 0.3s ease-in 0.2s;
+    -o-transition: all 0.3s ease-in 0.2s;
+    transition: all 0.3s ease-in 0.2s;
+}
+
+
+    #name.name_resize {
+    margin-left:21px !important;
+    top:21px;
+    -webkit-backface-visibility: hidden; /* chrome fix to avoid flicker */
+    -webkit-transition: all 0.1s ease-in 0s;
+    -moz-transition: all 0.1s ease-in 0s;
+    -o-transition: all 0.1s ease-in 0s;
+    transition: all 0.1s ease-in 0s;
+}
+
+
+    #name.name_resize p{
+    z-index: 10000;
+    font-size:14px !important; 
+    line-height:15px !important; 
+    -webkit-backface-visibility: hidden; /* chrome fix to avoid flicker */
+    -webkit-transition: all 0.1s ease-in 0s;
+    -moz-transition: all 0.1s ease-in 0s;
+    -o-transition: all 0.1s ease-in 0s;
+    transition: all 0.1s ease-in 0s;  
+}
+
+
+/*------------------------DESCRIPTION------------------------------*/
+
+    #desciption p{
+    font-family:'apercuregular', arial, sans-serif;
+    position: absolute;
+    color:#333333;
+    font-weight:bold;
+    text-transform:uppercase;
+    text-align:right;
+    width: 144px;
+    height:70px;
+}
+
+    #description{
+    position: absolute;
+    margin-left:350px;
+    width: 144px;
+    height:30px;
+    top:55px;
+    color:#333333;
+    text-align:right;
+}
+
+    #description.description_decalage{
+    font-size:13px !important; 
+    line-height:14px !important;
+    margin-left:147px;
+    -webkit-backface-visibility: hidden; /* chrome fix to avoid flicker */
+    -webkit-transition: all 0.1s ease-in 0s;
+    -moz-transition: all 0.1s ease-in 0s;
+    -o-transition: all 0.1s ease-in 0s;
+    transition: all 0.1s ease-in 0s;   
+}
+
+    #description.description_resize{ 
+    font-size: 11px !important;
+    line-height: 12px !important;
+    margin-left: 147px;
+    top: 53px;
+    -webkit-backface-visibility: hidden; /* chrome fix to avoid flicker */
+    -webkit-transition: all 0.1s ease-in 0s;
+    -moz-transition: all 0.1s ease-in 0s;
+    -o-transition: all 0.1s ease-in 0s;
+    transition: all 0.1s ease-in 0s;
+}
+
+/*------------------------PRICE------------------------------*/
+
+    #price{
+    background-color: #c20116;
+    border-top: 5px solid #010000;
+    height: 58px;
+    margin-left: 400px;
+    margin-top: 129px;
+    position: absolute;
+    width: 116px;
+    z-index: 150;
+
+}
+
+    #price #entier{
+    bottom: 42px;
+    color: #f9ee00;
+    font-size: 43px;
+    line-height: 47px;
+    font-weight: bold;
+    height: 61px;
+    right: 8px;
+    position: relative;
+    text-align: right;
+    width: 80px;
+}
+
+    #price #euro{
+    bottom: 141px;
+    color: #f9ee00;
+    font-size: 16px;
+    font-weight: bold;
+    height: auto;
+    left: 74px;
+    line-height: 19px;
+    position: relative;
+    width: 20px;
+}
+
+    #price #cent{
+    bottom: 161px;
+    color: #f9ee00;
+    font-size: 19px;
+    font-weight: bold;
+    height: 20px;
+    left: 74px;
+    line-height: 18px;
+    position: relative;
+    text-align: left;
+    width: 30px;
+}
+
+
+    #price.price_decalage{
+    margin-left:177px;
+    -webkit-backface-visibility: hidden; /* chrome fix to avoid flicker */
+    -webkit-transition: all 0.3s ease-in 0s;
+    -moz-transition: all 0.3s ease-in 0s;
+    -o-transition: all 0.3s ease-in 0s;
+    transition: all 0.3s ease-in 0s;
+}
+
+    #price.price_resize{
+    margin-top: 83px;
+    margin-left:177px;
+    height: 58px;
+    width: 116px;
+    opacity:1;
+    -webkit-backface-visibility: hidden; /* chrome fix to avoid flicker */
+    -webkit-transition: all 0.1s ease-in 0s;
+    -moz-transition: all 0.1s ease-in 0s;
+    -o-transition: all 0.1s ease-in 0s;
+    transition: all 0.1s ease-in 0s;
+}
+
+/*------------------------MENTION------------------------------*/
+
+    #mention{
+    position:absolute;
+    font-size:7px;
+    line-height:7px;
+    bottom:-3px;
+    color:#f9ee00;
+    text-align: center;
+    width: 116px;
+}
+
+
+/*------------------------FOOTER------------------------------*/
+    
+    #foot p{
+    background-color: #c20015;
+    color: #fff;
+    float: right;
+    font-family: "apercuregular",arial,sans-serif;
+    font-size: 13px;
+    line-height: 26px;
+    padding-left: 106px;
+    position: absolute;
+    top: 3px;
+    width: 300px;
+}
+
+    #foot{
+    width:300px;
+    position:absolute;
+    top:206px;
+    z-index:151;
+}
+      
+    #foot2 p{
+    background-color: #c20015;
+    color: #fff;
+    float: right;
+    font-family: "apercuregular",arial,sans-serif;
+    font-size: 13px;
+    line-height: 26px;
+    padding-left: 106px;
+    position: absolute;
+    top: 3px;
+    width: 300px;
+}
+
+    #foot2{
+    width:300px;
+    position:absolute;
+    top:207px;
+    z-index:151;
+}
+
+    #foot2.remonte_foot{
+    width:300px;
+    position:absolute;
+    top:160px;
+    -webkit-backface-visibility: hidden; /* chrome fix to avoid flicker */
+    -webkit-transition: all 0.1s ease-in 0s;
+    -moz-transition: all 0.1s ease-in 0s;
+    -o-transition: all 0.1s ease-in 0s;
+    transition: all 0.1s ease-in 0s;
+}
+
+
+/*------------------------GEOLOC-----------------------------*/
+   
+    #geoloc{
+    background-color: #fff;
+    height: 46px;
+    position: absolute;
+    top: 202px;
+    width: 300px;
+}
+
+    #geoloc.remonte_geoloc{
+    top: 177px;
+    -webkit-backface-visibility: hidden; /* chrome fix to avoid flicker */
+    -webkit-transition: all 0.1s ease-in 0.1s;
+    -moz-transition: all 0.1s ease-in 0.1s;
+    -o-transition: all 0.1s ease-in 0.1s;
+    transition: all 0.1s ease-in 0.1s;
+}
+
+    #geoloc #intro_geoloc {
+    font-family:'apercubold', arial, sans-serif;
+    font-size: 11px;
+    height: 25px;
+    line-height: 13px;
+    margin: 0 auto;
+    position: absolute;
+    top: 8px;
+    width: 300px;
+    color:#333333;
+    text-align:center;
+}
+
+    #geoloc #adresse{
+    font-weight:bold;
+    font-size: 10px;
+    line-height: 12px;
+    overflow: hidden;
+    position: relative;
+    /*word-wrap:break-word;*/
+    top: 2px;
+    height: 15px;
+    margin: 0;
+    margin-top: 2px;
+}
+
+    #pin{
+
+    position: absolute;
+    bottom: 20%;
+    left: 50%;
+}
+
+    #pin p{
+    color:black !important;
+    font-size:12px;
+    position:absolute;
+}
+
+    #geoloc #pin img{
+    top: 0px;
+    height: auto;
+    float:left;
+    width: 12px;
+    position:relative;
+}
+
+    #geoloc p{
+    font-family:'apercuregular', arial, sans-serif;
+    text-transform:uppercase;
+    color:red;
+}
+
+
+
+  </style>
+</head>
+<body>
+<!--  Begin Crea Contener  -->
+  <a href="javascript:void(0);" onclick="ADventori.click();">
+<div id="adventoriAd">
+
+<!----------------------------------------------------DIV1---------------------------------------------------->
+
+  <div id="div1">
+
+ <div id="header">
+      <div id="logo"><img src="img/logo.png"></div>
+      <div id="date">
+        <p>Du <span id="color1" class="color">22 Avril</span> au <span id="color2" class="color">02 Mai</span> 2015</p>
+      </div>
+ </div>
+
+      <div id="background">      
+      </div>
+
+       <div id="foot">
+        <p>mr-bricolage.fr</p>
+      </div>
+
+     
+  </div>
+
+<!----------------------------------------------------DIV2---------------------------------------------------->
+
+  <div id="div2" style="display:none;">
+
+
+  <div id="header2">
+      <div id="logo"><img src="img/logo.png"></div>
+      <div id="date2">
+        <p>Du <span id="color1_2" class="color">22 Avril</span> au <span id="color2_2" class="color">02 Mai</span> 2015</p>
+      </div>
+</div>
+
+      <div id="background2">
+        <div id="produit">
+        </div>
+
+        <div id="name">
+          <p id="name_general1">Coffret outil multifonctions</p>
+        </div>
+
+        <div id="price">
+          <p id="entier">49<p id="euro">€</p><p id="cent">90</p></p>
+          <p id="mention">Dont 0,20€ d'éco-participation</p>
+        </div>
+
+        <div id="description">
+          <p id="description1">Pour décaper, poncer et gratter</p>
+        </div>
+        <div id="geoloc">
+          <p id="intro_geoloc">Choisissez votre magasin</p>
+          <div id="pin"><img src="img/pin.jpg"><p id="adresse">171 Rue Saint-Maur, 75011 Paris</p></div>
+        </div>
+      </div>
+
+      <div id="foot2">
+        <p>mr-bricolage.fr</p>
+      </div>
+    
+  </div>
+
+
+</div>
+
+
+
+</a>
+
+<script type="text/javascript">
+
+
+     var data = ADventori.initData({
+                adventoriad:"img/img1_2flou.jpg",
+                background:"img/img1.jpg",
+                background2:"img/img2.jpg",
+                namegeneral:"RADIATEUR RAYONNANT FIXE",
+                description:"HAMILTON 1000W<br/>thermostat electronique",
+                color1:"24 Avril",
+                color2:"03 Mai",
+                entier:"50",
+                euro:"€",
+                cent:"90",
+                mention:"Dont 0,20€ d'éco-participation",
+                produit:"img/product1.png",
+                intro_geoloc:"Choisissez votre magasin de :",
+                adresse:"Cliquez ici",
+                dateColor: '#7e1f7c'
+            });
+
+</script>
+
+<script type="text/javascript">
+
+/*----------------------------------------------------DIV1----------------------------------------------------*/
+
+  setTimeout(function(){
+
+    ADventori.Display.setText(document.getElementById('color1'),data.color1);
+    ADventori.Display.setText(document.getElementById('color2'),data.color2);
+    document.getElementById('date').style.color = data.dateColor;
+    /*ADventori.Display.adaptText(document.getElementById('color1'), 10);
+    ADventori.Display.adaptText(document.getElementById('color2'), 10);*/
+
+    document.getElementById('adventoriAd').style.backgroundImage = 'url("'+ADventori.data.adventoriad+'")';
+    document.getElementById('background').style.backgroundImage = 'url("'+ADventori.data.background+'")';
+
+    var zoom = document.getElementById('background');
+    zoom.className='zoom';
+
+    var descente = document.getElementById('header');
+    descente.className='descente';
+
+
+ 
+  }, (0));
+
+/*----------------------------------------------------DIV2----------------------------------------------------*/
+
+  setTimeout(function(){
+
+    document.getElementById("div1").style.display = "none";
+    document.getElementById("div2").style.display = "block";
+    ADventori.Display.setText(document.getElementById('name_general1'),data.namegeneral);
+    ADventori.Display.setText(document.getElementById('description'),data.description);
+    ADventori.Display.setText(document.getElementById('color1'),data.color1);
+    ADventori.Display.setText(document.getElementById('color2'),data.color2);
+    ADventori.Display.setText(document.getElementById('color1_2'),data.color1);
+    ADventori.Display.setText(document.getElementById('color2_2'),data.color2);
+    document.getElementById('date2').style.color = data.dateColor;
+    ADventori.Display.setText(document.getElementById('entier'),data.entier);
+    ADventori.Display.setText(document.getElementById('euro'),data.euro);
+    ADventori.Display.setText(document.getElementById('cent'),data.cent);
+    ADventori.Display.setText(document.getElementById('mention'),data.mention);
+    ADventori.Display.setText(document.getElementById('intro_geoloc'),data.intro_geoloc);
+    ADventori.Display.setText(document.getElementById('adresse'),data.adresse);
+
+   /* ADventori.Display.adaptText(document.getElementById('name_general1'), 10);
+    ADventori.Display.adaptText(document.getElementById('description'), 10);
+    ADventori.Display.adaptText(document.getElementById('color1'), 10);
+    ADventori.Display.adaptText(document.getElementById('color2'), 10);
+    ADventori.Display.adaptText(document.getElementById('entier'), 10);
+    ADventori.Display.adaptText(document.getElementById('euro'), 10);
+    ADventori.Display.adaptText(document.getElementById('cent'), 10);
+    ADventori.Display.adaptText(document.getElementById('mention'), 10);
+    ADventori.Display.adaptText(document.getElementById('intro_geoloc'), 10);
+    ADventori.Display.adaptText(document.getElementById('adresse'), 10);*/
+
+    ADventori.Display.addAndAdaptImage(document.getElementById('produit'),ADventori.data.produit, "img/product1.png");
+    document.getElementById('background2').style.backgroundImage = 'url("'+ADventori.data.background2+'")';
+
+var divPrice = document.getElementById('pin'),
+    divPrice2 = document.getElementById('adresse');
+
+divPrice.style["margin-left"]='-'+((divPrice2.offsetWidth+12)/2)+'px';
+
+  }, (2300));
+
+
+  setTimeout(function(){
+
+    var opacity = document.getElementById('background2');
+    opacity.className='opacity';
+
+    var produit_apparition = document.getElementById('produit');
+    produit_apparition.className='produit_apparition';
+
+    var name_decalage = document.getElementById('name');
+    name_decalage.className='name_decalage';
+
+    var price_decalage = document.getElementById('price');
+    price_decalage.className='price_decalage';
+
+            
+  }, (2350));
+
+/*----------------------------------------------------DIV3----------------------------------------------------*/
+
+  setTimeout(function(){
+
+    var description_decalage = document.getElementById('description');
+    description_decalage.className='description_decalage';
+
+
+  }, (3000));
+
+/*----------------------------------------------------DIV4----------------------------------------------------*/
+
+
+
+    setTimeout(function(){
+
+    var remonte_geoloc = document.getElementById('geoloc');
+    remonte_geoloc.className='remonte_geoloc';
+
+    var description_resize = document.getElementById('description');
+    description_resize.className='description_resize';
+
+    var remonte_foot = document.getElementById('foot2');
+    remonte_foot.className='remonte_foot';
+
+    var name_resize = document.getElementById('name');
+    name_resize.className='name_resize';
+
+    var produit_resize = document.getElementById('produit');
+    produit_resize.className='produit_resize';
+
+    var price_resize = document.getElementById('price');
+    price_resize.className='price_resize';
+
+    var euro_resize = document.getElementById('euro');
+    euro_resize.className='euro_resize';
+
+    var entier_resize = document.getElementById('entier');
+    entier_resize.className='entier_resize';
+
+    var mention_resize = document.getElementById('mention');
+    mention_resize.className='mention_resize';
+
+
+
+  }, (4700));
+
+
+</script>
+
+</body>
+</html>

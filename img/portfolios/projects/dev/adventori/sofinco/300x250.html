@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <title>300x250 SOFINCO</title>
+  <link rel="stylesheet" type="text/css" href="http://adventori.com/lp/enabler/ADventori-2.0.0.css">
+  <script src="http://adventori.com/lp/enabler/ADventori-2.0.0.js"></script>
+  <style type="text/css">
+
+
+    /*@font-face {
+      font-family: 'interstatebold';
+      src: url('interstate-bold-webfont.eot');
+      src: url('interstate-bold-webfont.eot?#iefix') format('embedded-opentype'),
+      url('interstate-bold-webfont.woff2') format('woff2'),
+      url('interstate-bold-webfont.woff') format('woff'),
+      url('interstate-bold-webfont.ttf') format('truetype'),
+      url('interstate-bold-webfont.svg#interstateregular') format('svg');
+      font-weight: normal;
+      font-style: normal;
+
+    }
+
+
+    @font-face {
+      font-family: 'interstateregular';
+      src: url('interstate-regular-webfont.eot');
+      src: url('interstate-regular-webfont.eot?#iefix') format('embedded-opentype'),
+      url('interstate-regular-webfont.woff2') format('woff2'),
+      url('interstate-regular-webfont.woff') format('woff'),
+      url('interstate-regular-webfont.ttf') format('truetype'),
+      url('interstate-regular-webfont.svg#interstateregular') format('svg');
+      font-weight: normal;
+      font-style: normal;
+
+    }
+*/
+
+
+    #adventoriAd {
+      font-family: arial,Verdana,Georgia,sans-serif;
+      overflow:hidden;
+      width: 300px;
+      height: 250px;
+      background-color: #8d99b1;
+      position:relative;
+      border:1px solid #353535;
+    }
+
+    #adventoriAd #fixed {
+      position:absolute;
+      background-color:white;
+      bottom:0;
+      width:300px;
+      height:50px;
+      z-index:150;
+
+    }
+
+body{
+
+    margin: 0;
+}
+
+/*------------------------DIV1------------------------------*/
+    #logo{
+        position:relative;
+        bottom:-150px;
+        width:300px;
+        z-index:151;
+        height:50px;
+        filter: alpha(opacity=0); /* internet explorer */
+        -khtml-opacity: 0;      /* khtml, old safari */
+        -moz-opacity: 0;       /* mozilla, netscape */
+        opacity: 0; 
+        }
+
+    #logo.defilement_logo{
+       width:300px;
+        height:50px;
+        bottom:-79px;
+        filter: alpha(opacity=100); /* internet explorer */
+        -khtml-opacity: 1;      /* khtml, old safari */
+        -moz-opacity: 1;       /* mozilla, netscape */
+        opacity: 1; 
+         -webkit-backface-visibility: hidden; /* chrome fix to avoid flicker */
+        -webkit-transition: all 0.2s ease-in 0s;
+        -moz-transition: all 0.2s ease-in 0s;
+        -o-transition: all 0.2s ease-in 0s;
+        transition: all 0.2s ease-in 0s;
+
+        }
+
+    #bloc_texte{
+        position: relative;
+        left:-300px;
+        top:47px;
+        }
+
+    #bloc_texte.defilement1{
+        left:38px;
+        -webkit-backface-visibility: hidden; /* chrome fix to avoid flicker */
+        -webkit-transition: all 0.7s ease-in-out 0s;
+        -moz-transition: all 0.7s ease-in-out 0s;
+        -o-transition: all 0.7s ease-in-out 0s;
+        transition: all 0.7s ease-in-out 0s;
+    }
+
+
+
+/*------------------------DIV2------------------------------*/
+          /*------------------------ETOILE------------------------------*/
+
+    #etoile img{
+        position: relative;
+        width:270px;
+        overflow:hidden;
+        }
+
+    #etoile{
+        position: relative;
+        z-index:150;
+        top:-83px;
+        left:-84px;
+        }
+
+    #etoile.rotation_etoile{
+        top:67px;   
+        -webkit-backface-visibility: hidden; /* chrome fix to avoid flicker */
+        -webkit-transition: all 0.8s ease-in-out 0s;
+        -moz-transition: all 0.8s ease-in-out 0s;
+        -o-transition: all 0.8s ease-in-out 0s;
+        transition: all 0.8s ease-in-out 0s;
+        transform: rotate(-70deg);
+        transform-origin: 25% 25%;
+        }
+
+
+                  /*------------------------PRODUIT------------------------------*/
+
+    #produit img{
+        position: absolute;
+        width:170px;
+        height:170px;
+        overflow:hidden;
+        }
+
+    #produit{
+        z-index:140;
+        opacity:0;
+        position: absolute;
+        top:5px;
+        left:-42px;
+        }
+
+    #produit.apparition_produit{
+      opacity:1;
+        
+        -webkit-backface-visibility: hidden; /* chrome fix to avoid flicker */
+        -webkit-transition: all 1.2s ease-in-out 0.5s;
+        -moz-transition: all 1.2s ease-in-out 0.5s;
+        -o-transition: all 1.2s ease-in-out 0.5s;
+        transition: all 1.2s ease-in-out 0.5s;
+
+        }
+
+
+
+
+          /*------------------------MENTIONS------------------------------*/
+
+    #mentions p{
+        color:#000;
+        position:absolute;
+        text-decoration:none;
+        font-family: arial, sans-serif;
+        font-weight:300;
+        font-size:14px;
+        line-height:14px;
+        text-align:center;
+        width:300px;
+        }
+
+    #mentions{
+        position: absolute;
+        text-decoration:none;
+        z-index:155;
+        top:235px;
+        width:300px;
+        margin:0 auto;
+        text-align:center;
+        }
+
+    #mentions.defilement_mentions{
+        top:189px;
+        text-decoration:none;
+        -webkit-backface-visibility: hidden; /* chrome fix to avoid flicker */
+        -webkit-transition: all 0.4s ease-in-out 0.5s;
+        -moz-transition: all 0.4s ease-in-out 0.5s;
+        -o-transition: all 0.4s ease-in-out 0.5s;
+        transition: all 0.4s ease-in-out 0.5s;
+        }
+
+          /*------------------------H1------------------------------*/
+
+    #h1 p{
+        font-family: verdana, arial, sans-serif;
+        color:#fff;
+        font-size:13px;
+        line-height:14px;
+        text-align:left;
+		    margin-left: 20px;
+      }
+
+    #h1{
+        position: absolute;
+        z-index:155;
+        top:-70px;
+        left:68px;
+        width:240px;
+    
+        }
+
+    #h1.defilement_h1{
+        top:12px;
+        -webkit-backface-visibility: hidden; /* chrome fix to avoid flicker */
+        -webkit-transition: all 0.5s ease-in-out 0.2s;
+        -moz-transition: all 0.5s ease-in-out 0.2s;
+        -o-transition: all 0.5s ease-in-out 0.2s;
+        transition: all 0.5s ease-in-out 0.2s;
+        }
+
+
+          /*------------------------FORM------------------------------*/
+
+
+    #form p{
+        font-family: verdana, arial, sans-serif;
+        color:#fff;
+        font-size:12px;
+        line-height:16px;
+        }
+
+    #form input{
+        border:2px solid #6d719c;
+        height:25px;
+        width:130px;
+        clear:both;
+        border-radius:4px;
+        }
+
+    #form{
+        position: absolute;
+        z-index:155;
+        top:70px;
+        left:125px;  
+        width:126px;
+        filter: alpha(opacity=0); /* internet explorer */
+        -khtml-opacity: 0;      /* khtml, old safari */
+        -moz-opacity: 0;       /* mozilla, netscape */
+        opacity: 0; 
+        }
+
+        
+
+     #pret{
+        position: absolute;
+        font-family: arial, sans-serif;
+        z-index:157;
+        top:39px; 
+        width:100px;  
+        color:#e65000;
+        padding-left:10px;
+        font-size:14px;
+        filter: alpha(opacity=0); /* internet explorer */
+        -khtml-opacity: 0;      /* khtml, old safari */
+        -moz-opacity: 0;       /* mozilla, netscape */
+        opacity: 0; 
+        }
+
+      #pret.apparition_pret{
+        filter: alpha(opacity=100); /* internet explorer */
+        -khtml-opacity: 1;      /* khtml, old safari */
+        -moz-opacity: 1;       /* mozilla, netscape */
+        opacity: 1; 
+
+        -webkit-backface-visibility: hidden; /* chrome fix to avoid flicker */
+        -webkit-transition: all 0.5s ease-in-out 1.5s;
+        -moz-transition: all 0.5s ease-in-out 1.5s;
+        -o-transition: all 0.5s ease-in-out 1.5s;
+        transition: all 0.5s ease-in-out 1.5s;
+        }
+
+ 
+
+
+    #form h2{
+        position: absolute;
+        top:13px;
+        font-weight:300;
+        left:142px;
+        color:#fff;
+        }
+
+    #input{
+      position:absolute;
+      bottom:-20px;
+      border-radius:4px;
+      width:135px;
+      height:26px;
+      background-color:#fff;
+
+        } 
+
+    #form.apparition_form{
+        filter: alpha(opacity=100); /* internet explorer */
+        -khtml-opacity: 1;      /* khtml, old safari */
+        -moz-opacity: 1;       /* mozilla, netscape */
+        opacity: 1; 
+
+        -webkit-backface-visibility: hidden; /* chrome fix to avoid flicker */
+        -webkit-transition: all 0.5s ease-in-out 1s;
+        -moz-transition: all 0.5s ease-in-out 1s;
+        -o-transition: all 0.5s ease-in-out 1s;
+        transition: all 0.5s ease-in-out 1s;
+        }
+
+          /*------------------------CTA------------------------------*/
+
+
+    #cta{
+       position: absolute;
+       background-color:#e65000;
+       color:#fff;
+       width:135px;
+       height:30px;
+       left:125px;  
+       top:140px;
+       box-shadow: 4px 4px 5px #6c7484;
+       filter: alpha(opacity=0); /* internet explorer */
+       -khtml-opacity: 0;      /* khtml, old safari */
+       -moz-opacity: 0;       /* mozilla, netscape */
+       opacity: 0;
+       z-index:200;
+       }
+
+    #cta p{
+      color: #fff;
+      float: left;
+      font-size: 14px;
+      line-height: 4px;
+      padding-left: 10px;
+      position: relative;
+      text-align: center;
+      text-decoration: none;
+      text-transform: uppercase;
+        }
+
+    #cta.apparition_cta{
+        filter: alpha(opacity=100); /* internet explorer */
+        -khtml-opacity: 1;      /* khtml, old safari */
+        -moz-opacity: 1;       /* mozilla, netscape */
+        opacity: 1; 
+        -webkit-backface-visibility: hidden; /* chrome fix to avoid flicker */
+        -webkit-transition: all 0.5s ease-in-out 1.5s;
+        -moz-transition: all 0.5s ease-in-out 1.5s;
+        -o-transition: all 0.5s ease-in-out 1.5s;
+        transition: all 0.5s ease-in-out 1.5s;
+        }
+
+
+    .chevron {
+      padding-left:17px;
+      font-weight:bold;
+      float:left;
+      font-size:14px;
+      padding-top:0px;
+      line-height:30px;
+      filter: alpha(opacity=100); /* internet explorer */
+      -khtml-opacity: 1;      /* khtml, old safari */
+      -moz-opacity: 1;       /* mozilla, netscape */
+      opacity: 1;
+    }
+
+    .chevron.clignote{
+        filter: alpha(opacity=0); /* internet explorer */
+        -khtml-opacity: 0;      /* khtml, old safari */
+        -moz-opacity: 0;       /* mozilla, netscape */
+        opacity: 0; 
+        }
+
+    #logo2{
+        position:absolute;
+        bottom:-150px;
+        width:300px;
+        z-index:155;
+        height:50px;
+        filter: alpha(opacity=0); /* internet explorer */
+        -khtml-opacity: 0;      /* khtml, old safari */
+        -moz-opacity: 0;       /* mozilla, netscape */
+        opacity: 0; 
+        }
+
+    #logo2.defilement_logo{
+        width:300px;
+        height:50px;
+        bottom:0px;
+        filter: alpha(opacity=100); /* internet explorer */
+        -khtml-opacity: 1;      /* khtml, old safari */
+        -moz-opacity: 1;       /* mozilla, netscape */
+        opacity: 1; 
+         -webkit-backface-visibility: hidden; /* chrome fix to avoid flicker */
+        -webkit-transition: all 1s ease-in 3.7s;
+        -moz-transition: all 1s ease-in 3.7s;
+        -o-transition: all 1s ease-in 3.7s;
+        transition: all 1s ease-in 3.7s;
+
+        }
+
+
+  </style>
+</head>
+<body style="margin:0 !important;">
+<!--  Begin Crea Contener  -->
+  <a href="javascript:void(0);" onclick="ADventori.click();">
+<div id="adventoriAd">
+
+  <div id="div1">
+
+
+      <div id="bloc_texte">
+        <img src="img/bloc_texte.png">
+      </div>
+      <div id="logo">
+        <img src="img/logo_sofinco.png">
+      </div>
+
+  </div>
+
+
+  <div id="div2" style="display:none;">
+
+      <div id="etoile">
+        <img class="etoile" src="img/etoile2.png">
+      </div>
+
+       <div id="produit">
+        <img class="produit" id="resize" src="img/produit2.png">
+      </div>
+
+       <div id="mentions">
+        <p>Un crédit vous engage et doit être remboursé</br>
+          Vérifiez vos capacités de remboursement<br/>
+          avant de vous engager</p>
+      </div>
+
+      <div id="h1">
+        <p>Le Prêt Auto Sofinco : </p>
+      </div>
+
+      
+
+      <div id="form">
+         <div id="pret">1000</div>
+        <p>Votre montant : <div id="input"></div></p>
+        <h2>€</h2>
+      </div>
+
+      <div id="cta"><div class="chevron">></div><p>SIMULEZ</p></div>
+
+      <div id="logo2">
+        <img src="img/logo_sofinco.png">
+      </div>
+    
+
+
+  </div>
+
+
+
+  <div id="fixed">
+  </div>
+
+</div></a>
+
+
+
+<script type="text/javascript">
+
+
+
+
+
+  setTimeout(function(){
+
+    var defilement1 = document.getElementById('bloc_texte');
+    defilement1.classList.add('defilement1');
+
+    var defilement_logo = document.getElementById('logo');
+    defilement_logo.classList.add('defilement_logo');
+
+  }, (0));
+
+
+
+
+  setTimeout(function(){
+
+    document.getElementById("div1").style.display = "none";
+    document.getElementById("div2").style.display = "block";
+
+  }, (2800));
+
+
+
+  setTimeout(function(){
+
+    var rotation_etoile = document.getElementById('etoile');
+    rotation_etoile.classList.add('rotation_etoile');
+
+      var apparition_produit = document.getElementById('produit');
+    apparition_produit.classList.add('apparition_produit');
+
+    var defilement_mentions = document.getElementById('mentions');
+    defilement_mentions.classList.add('defilement_mentions');
+
+    var defilement_h1 = document.getElementById('h1');
+    defilement_h1.classList.add('defilement_h1');
+
+    var apparition_form = document.getElementById('form');
+    apparition_form.classList.add('apparition_form');
+    document.getElementById('input').focus();
+
+    var apparition_cta = document.getElementById('cta');
+    apparition_cta.classList.add('apparition_cta');
+
+     var apparition_pret = document.getElementById('pret');
+    apparition_pret.classList.add('apparition_pret');
+
+    var defilement_logo = document.getElementById('logo2');
+    defilement_logo.classList.add('defilement_logo');
+
+
+                //myTimer( rec,250,10000 );
+                //myTimer( norec,500,10000 );
+  }, (2900));
+
+
+  function myTimer( nameFunction,interval,duree )
+  {
+      var timerclign = window.setInterval(nameFunction, interval);
+      window.setTimeout(function() {
+          window.clearInterval(timerclign);
+      }, duree);
+  }
+  function rec(){
+      var rec =document.getElementsByClassName('chevron')[0];
+      rec.className='chevron clignote';
+  }
+
+  function norec(){
+      var rec =document.getElementsByClassName('chevron')[0];
+      rec.className='chevron';
+  }
+
+
+  var demo = ADventori.initData({
+    "produit": "img/produit.png",
+    "pret": "20000"
+  });
+
+  ADventori.Display.setImageUrl(document.getElementsByClassName('produit'),demo.produit);
+  ADventori.Display.adaptImage(document.getElementsByClassName('resize'));
+
+
+  ADventori.Display.setText(document.getElementById('pret'),ADventori.data.pret);
+
+
+</script>
+
+</body>
+</html>
